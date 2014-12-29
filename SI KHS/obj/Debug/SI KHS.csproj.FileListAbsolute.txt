@@ -1,0 +1,13 @@
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\bin\Debug\SI KHS.exe.config
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\bin\Debug\SI KHS.exe
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\bin\Debug\SI KHS.pdb
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI KHS.csprojResolveAssemblyReference.cache
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.Login.resources
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.Properties.Resources.resources
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI KHS.csproj.GenerateResource.Cache
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI KHS.exe
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI KHS.pdb
+D:\User\Documents\Visual Studio 2013\Projects\SI KHS\SI KHS\bin\Debug\MySql.Data.dll
+D:\User\Documents\Visual Studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.Adminform.resources
+D:\User\Documents\Visual Studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.mhsform.resources
+d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.dsnform.resources
