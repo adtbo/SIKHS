@@ -11,3 +11,6 @@ D:\User\Documents\Visual Studio 2013\Projects\SI KHS\SI KHS\bin\Debug\MySql.Data
 D:\User\Documents\Visual Studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.Adminform.resources
 D:\User\Documents\Visual Studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.mhsform.resources
 d:\user\documents\visual studio 2013\Projects\SI KHS\SI KHS\obj\Debug\SI_KHS.dsnform.resources
+D:\User\Documents\GitHub\SIKHS\SI KHS\bin\Debug\SI KHS.exe.config
+D:\User\Documents\GitHub\SIKHS\SI KHS\obj\Debug\SI KHS.exe
+D:\User\Documents\GitHub\SIKHS\SI KHS\obj\Debug\SI KHS.pdb

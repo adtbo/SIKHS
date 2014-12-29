@@ -24,11 +24,11 @@ namespace SI_KHS
 
         private void loginbutton_Click(object sender, EventArgs e)
         {
-            if(this.previl.Text == "Admin"){
+            if(this.previl.Text == "Admin"){//CHECK AKTOR
 
                 if (this.loginidbox.Text == "admin")
                 {
-                    if (this.loginpassbox.Text == "admin")
+                    if (this.loginpassbox.Text == "admin")//ADMIN MASIH BERIPA HARDCODE
                     {
                         System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(Threadadmin));
                         t.Start();
@@ -38,7 +38,7 @@ namespace SI_KHS
                         MessageBox.Show("Your Username / Password Incorrect");
                 }
             }
-            else if(previl.Text == "Dosen")
+            else if(previl.Text == "Dosen")//DOSEN DAN MAHASISWA SUDAH MENGGUNAKAN DATABASE
             {
                 string query = "Select * from dosen where nip='"+this.loginidbox.Text+"'";
                 list = dbConnection.SelectDosen(query);

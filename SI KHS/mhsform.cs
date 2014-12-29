@@ -31,7 +31,7 @@ namespace SI_KHS
             fillcombokls();
         }
         public string id { get; set; }
-        public void sethome()
+        public void sethome()//MENGISI IDENTITAS DARI AKTOR
         {
             query = "SELECT * FROM mahasiswa where nrp='"+label1.Text+"'";
             list = dbConnection.SelectMahasiswa(query);
@@ -43,7 +43,7 @@ namespace SI_KHS
             
         }
 
-        private void listtabelkhs()
+        private void listtabelkhs()//MENAMPILKAN LIST KARTU HASIL STUDI
         {
             query = "SELECT matakuliah.namamk,laporan.semesterambil,laporan.nilai FROM laporan,kelas,matakuliah where laporan.nrp='" + label1.Text + "' AND laporan.idkls=kelas.idkls AND kelas.id_mk=matakuliah.id_mk";
             list = dbConnection.Selectkhs(query);
@@ -57,7 +57,7 @@ namespace SI_KHS
             }
         }
 
-        private void listtabelkhs1(string sem)
+        private void listtabelkhs1(string sem)//MENAMPILKAN KHS SEMESTER TERTENTU
         {
             query = "SELECT matakuliah.namamk,laporan.semesterambil,laporan.nilai FROM laporan,kelas,matakuliah where laporan.nrp='" + label1.Text + "' AND laporan.idkls=kelas.idkls AND kelas.id_mk=matakuliah.id_mk AND laporan.semesterambil='"+sem+"'";
             list = dbConnection.Selectkhs(query);
@@ -70,7 +70,7 @@ namespace SI_KHS
                 listkhs.Rows[number].Cells[2].Value = list[2][i];
             }
         }
-        void fillcombokhs()
+        void fillcombokhs()//MENGISI NILAI SEMESTER
         {
             query = "SELECT * FROM mahasiswa where nrp='"+label1.Text+"'";
             list = dbConnection.SelectMahasiswa(query);
@@ -85,7 +85,7 @@ namespace SI_KHS
             }
         }
 
-        private void combosem_SelectedIndexChanged(object sender, EventArgs e)
+        private void combosem_SelectedIndexChanged(object sender, EventArgs e)//MENAMPILKAN KHS SEMESTER SERTA IPS
         {
             if (combosem.Text == "All")
             {
@@ -138,7 +138,7 @@ namespace SI_KHS
             }
         }
 
-        void fillcombokls()
+        void fillcombokls() //MENGISI DROPDOWN KELAS
         {
             query = "SELECT * FROM matakuliah";
             list = dbConnection.SelectMatkul(query);
@@ -174,7 +174,7 @@ namespace SI_KHS
             }      
         }
 
-        private void ambilbutton_Click(object sender, EventArgs e)
+        private void ambilbutton_Click(object sender, EventArgs e)//AMBIL MATAKULIAH
         {
             query = "SELECT * from laporan where idkls='"+comboidkls.Text+"'";
             list=dbConnection.selectlaporan(query);

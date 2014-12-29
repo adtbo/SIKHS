@@ -27,7 +27,7 @@ namespace SI_KHS
             sethome();
         }
         public string id { get; set; }
-        public void sethome()
+        public void sethome()//SET DATA IDENTITAS AKTOR
         {
             query = "SELECT * FROM dosen where nip='" + niplabel.Text + "'";
             list = dbConnection.SelectDosen(query);
@@ -36,7 +36,7 @@ namespace SI_KHS
                 namalabel.Text = list[1][i];
             }
         }
-        void fillcombotahun()
+        void fillcombotahun()//MENGISI DROPDOWN TAHUN
         {
             comtahun.Items.Clear();
             for (int i = 2012; i < 2016; i++)
@@ -44,7 +44,7 @@ namespace SI_KHS
                 comtahun.Items.Add(i);
             }
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)//MENGISI DROPDOWN KELAS
         {
             query = "SELECT * FROM kelas where tahun='" + comtahun.Text + "' AND nip='" + niplabel.Text + "'";
             list = dbConnection.SelectKelas(query);
@@ -77,7 +77,7 @@ namespace SI_KHS
             listtabel();
         }
 
-        private void listtabel()
+        private void listtabel()//MENAMPILKAN MAHASISWA PADA KELAS TERTENTU
         {
             query = "SELECT mahasiswa.nrp, mahasiswa.namamhs,laporan.nilai FROM matakuliah, mahasiswa,laporan,kelas,Dosen where mahasiswa.nrp=laporan.nrp AND kelas.idkls=laporan.idkls AND dosen.nip=kelas.nip AND matakuliah.id_mk=kelas.id_mk AND dosen.nip='"+niplabel.Text+"' AND kelas.idkls='"+kelascom.Text+"'";
             list = dbConnection.Selectnilai(query);
@@ -101,7 +101,7 @@ namespace SI_KHS
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//MEMASUKKAN NILAI MAHASISWA TERTENTU DAN MENGUPDATE IPK DARI MAHASISWA TSB
         {
             query = "UPDATE laporan SET nilai = '"+nilaicom.Text+"' where nrp='"+nrpmhslabel.Text+"' AND idkls='"+kelascom.Text+"'";
             dbConnection.Update(query);

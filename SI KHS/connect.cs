@@ -21,7 +21,7 @@ namespace SI_KHS
             Initialize();
         }
 
-        private void Initialize()
+        private void Initialize()//MEMBUAT PROPERTI DARI KONEKSI DATABASE
         {
             server = "localhost";
             database = "netbaru";
@@ -347,4 +347,4 @@ namespace SI_KHS
             }
         }
     }
-}
+}//BERISI FUNGSI SELECT UNTUK MENGAMBIL DATA DARI DATABASE YANG AKAN DIMASUKKAN KE LIST
